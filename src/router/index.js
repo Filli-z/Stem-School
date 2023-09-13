@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../components/HomeView.vue";
+import footerss from "../components/footerss.vue";
+import TimeLine from "../components/TimeLine.vue";
+import Gallery from "../components/Gallery.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,17 +16,17 @@ const router = createRouter({
     {
       path: "/footer",
       name: "footer",
-      component: () => import("../components/footerss.vue"),
+      component: footerss,
     },
     {
       path: "/timeline",
       name: "timeline",
-      component: () => import("../components/TimeLine.vue"),
+      component: TimeLine,
     },
     {
       path: "/gallery",
       name: "gallery",
-      component: () => import("../components/Gallery.vue"),
+      component: Gallery,
     },
   ],
 });
