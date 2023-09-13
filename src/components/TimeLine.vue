@@ -24,7 +24,7 @@
         <swiper-slide>
           <div class="card cards">
             <img
-              src="src/assets/images/photo_2023-08-23_15-00-38.jpg"
+              src="../assets/images/photo_2023-08-23_15-00-38.jpg"
               class="card-img-top"
               alt="..."
             />
@@ -43,7 +43,7 @@
         <swiper-slide>
           <div class="card">
             <img
-              src="src/assets/images/smilegrouppic2.jpg"
+              src="../assets/images/smilegrouppic2.jpg"
               class="card-img-top"
               alt="..."
             />
@@ -63,7 +63,7 @@
         <swiper-slide>
           <div class="card">
             <img
-              src="src/assets/images/smilegrouppic3.jpg"
+              src="../assets/images/smilegrouppic3.jpg"
               class="card-img-top"
               alt="..."
             />
@@ -82,7 +82,7 @@
         <swiper-slide>
           <div class="card">
             <img
-              src="src/assets/images/smilegrouppic4.jpg"
+              src="../assets/images/smilegrouppic4.jpg"
               class="card-img-top"
               alt="..."
             />
@@ -101,7 +101,7 @@
         <swiper-slide>
           <div class="card">
             <img
-              src="src/assets/images/smilegrouppics.jpg"
+              src="../assets/images/smilegrouppics.jpg"
               class="card-img-top"
               alt="..."
             />
@@ -121,7 +121,7 @@
         <swiper-slide>
           <div class="card">
             <img
-              src="src/assets/images/photo_2023-08-23_15-00-38.jpg"
+              src="../assets/images/photo_2023-08-23_15-00-38.jpg"
               class="card-img-top"
               alt="..."
             />

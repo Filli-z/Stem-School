@@ -7,7 +7,7 @@
       Partners
     </h1>
     <div class="sponsor-container">
-      <img src="src/assets/images/Ethiopianairlineslogo.png" alt="Snow" />
+      <img src="../assets/images/Ethiopianairlineslogo.png" alt="Snow" />
       <img src="../assets/images/boing.png" alt="Forest" />
       <img src="../assets/images/thinkyounglogo.jpg" alt="Mountains" />
     </div>
