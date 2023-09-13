@@ -9,7 +9,6 @@ import "swiper/css/autoplay";
 import * as ionicons from "ionicons/icons";
 import { Pagination } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
-import { query, collection, getDocs } from "firebase/firestore";
 import db from "./js/init";
 export default {
   data() {
@@ -17,20 +16,8 @@ export default {
       students: [],
     };
   },
-  created() {
-    this.getUsers();
-  },
-  methods: {
-    async getUsers() {
-      // query to get all docs in 'countries' collection
-      const querySnap = await getDocs(query(collection(db, "students")));
-
-      // add each doc to 'countries' array
-      querySnap.forEach((doc) => {
-        this.students.push(doc.data());
-      });
-    },
-  },
+  created() {},
+  methods: {},
   components: {
     Swiper,
     SwiperSlide,
