@@ -1,16 +1,22 @@
 <template>
- <div class="container" id="Home">
-  <img src="../assets/images/homepagepicture.jpg">
- </div> 
- <div class="text-container">
-   <h1><span class="typing">{{typeValue}}</span>
-     <span class="blinking-cursor">|</span>
-     <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
-   </h1>
-  <p style="font-size: 40px;">“</p>
-  <p class="paragriphy" style="color: #3c6478">"Unlock the door to creativity and innovation in the world of STEM - where you become the master of your journey.</p>
-  <p style="font-size: 40px; position: absolute; padding-left: 110%; ">”</p>
- </div>
+  <div>
+    <div class="container" id="Home">
+      <img src="../assets/images/homepagepicture.jpg" />
+    </div>
+    <div class="text-container">
+      <h1>
+        <span class="typing">{{ typeValue }}</span>
+        <span class="blinking-cursor">|</span>
+        <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
+      </h1>
+      <p style="font-size: 40px">“</p>
+      <p class="paragriphy" style="color: #3c6478">
+        "Unlock the door to creativity and innovation in the world of STEM -
+        where you become the master of your journey.
+      </p>
+      <p style="font-size: 40px; position: absolute; padding-left: 110%">”</p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -29,11 +35,14 @@ export default {
   },
   methods: {
     typeText() {
-      if (this.charIndex < this.displayTextArray[this.displayTextArrayIndex].length) {
+      if (
+        this.charIndex <
+        this.displayTextArray[this.displayTextArrayIndex].length
+      ) {
         if (!this.typeStatus) this.typeStatus = true;
-        this.typeValue += this.displayTextArray[this.displayTextArrayIndex].charAt(
-            this.charIndex
-        );
+        this.typeValue += this.displayTextArray[
+          this.displayTextArrayIndex
+        ].charAt(this.charIndex);
         this.charIndex += 1;
         setTimeout(this.typeText, this.typingSpeed);
       } else {
@@ -44,10 +53,9 @@ export default {
     eraseText() {
       if (this.charIndex > 0) {
         if (!this.typeStatus) this.typeStatus = true;
-        this.typeValue = this.displayTextArray[this.displayTextArrayIndex].substring(
-            0,
-            this.charIndex - 1
-        );
+        this.typeValue = this.displayTextArray[
+          this.displayTextArrayIndex
+        ].substring(0, this.charIndex - 1);
         this.charIndex -= 1;
         setTimeout(this.eraseText, this.erasingSpeed);
       } else {
@@ -62,43 +70,41 @@ export default {
   created() {
     setTimeout(this.typeText, this.newTextDelay + 200);
   },
-}
+};
 </script>
 <style scoped>
-body{
+body {
   width: 100%;
 }
-.container{
+.container {
   margin-top: 4%;
 }
-img{
+img {
   width: 100%;
   height: 90vh;
   object-fit: cover;
   opacity: 0.5;
 }
-.typing{
-  color: #093145
+.typing {
+  color: #093145;
 }
-.paragriphy{
-  color: #3c6478
+.paragriphy {
+  color: #3c6478;
 }
-.text-container{
-  top:20%;
+.text-container {
+  top: 20%;
   left: 10%;
   position: absolute;
   width: 40%;
-
 }
-h1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 90px;
   font-weight: bolder;
 }
-p{
-  color: gray ;
+p {
+  color: gray;
   font-size: 20px;
-  
 }
 .blinking-cursor {
   font-size: 6rem;
@@ -154,5 +160,4 @@ p{
     color: #2c3e50;
   }
 }
-
 </style>
