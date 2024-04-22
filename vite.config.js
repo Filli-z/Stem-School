@@ -5,7 +5,7 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/stem-school/",
+  base: "https://filli-z.github.io/Stem-School/",
   plugins: [vue()],
   resolve: {
     alias: {
